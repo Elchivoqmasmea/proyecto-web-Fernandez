@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal - Proyecto de Desarrollo Web">
+    <meta name="author" content="[Bryan Gabriel Fernandez Gonzalez]">
+    <title>Mi Portafolio Personal - Bryan Fernandez</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- HEADER: Encabezado con logo y menu de navegacion -->
+    <!-- ============================================ -->
+    <header>
+        <img src="img/Logo.png"  width="150" height="150" style="border-radius: 50%;">
+
+        <h1>Mi Portafolio Personal</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mi</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- MAIN: Contenido principal del sitio          -->
+    <!-- ============================================ -->
+    <main>
+
+        <!-- SECCION 1: INICIO / PRESENTACION -->
+        <section id="inicio">
+            <h2>Bienvenidos a mi Portafolio</h2>
+            <p>Hola, soy <strong>Bryan Fernandez</strong>, estudiante de Informatica en el IUTIRLA, seccion 4DA. Este sitio web es mi primer proyecto de desarrollo  Web y aqui muestro quién soy, lo que se hacer y los proyectos que he realizado.</p>
+            <img src="img/Yo.jpeg" alt= width = "300" height="300" style="border-radius: 50%; width: 200px;height: 200px;object-fit: cover;">
+            <p>Me gusta la tecnologia, los juegos,programar  y crear soluciones que le sirvan a los demas. Sigue bajando para conocerme mejor.</p>
+        </section>
+
+        <!-- SECCION 2: SOBRE MI -->
+        <section id="sobre-mi">
+            <h2>Sobre Mi</h2>
+            <p>Soy un estudiante de 4to trimestre de Informatica. Me gusta aprender y crear cosas nuevas. Actualmente estoy formandome en programacion, Phyton,Mantenimiento de computadoras,redes y desarrollo web.</p>
+            
+            <h3>Algunos datos sobre mi:</h3>
+            <ol>
+                <li>Vivo en Venezuela,Estado Nueva Esparta</li>
+                <li>Estudio en el IUTIRLA</li>
+                <li>Me gusta Editar videos, hago streams de aveces como hobby,amante a los videojuegos y hablar con las personas</li>
+                <li>Aprendo rapido y trabajo bien en equipo</li>
+            </ol>
+
+            <img src="img/Edit.jpeg" alt="Imagen representativa de mis estudios y pasatiempos" width="300" height="200"> <img src="img/clase.jpeg" width="300" height="200"> <img src="img/clase2.jpeg" width="300" height="200">
+        </section>
+
+        <!-- SECCION 3: HABILIDADES -->
+        <section id="habilidades">
+            <h2>Mis Habilidades</h2>
+            <p>Estas son las herramientas y conocimientos que he adquirido durante mi formacion academica:</p>
+            <ul>
+                <li>HTML5 - Estructura de paginas web (nivel basico)</li>
+                <li>Python - Programacion y programacion orientada a objetos</li>
+                <li>Microsoft Word - Redaccion y formato de documentos</li>
+                <li>Microsoft Excel - Organizacion de datos y calculos</li>
+                <li>Mantenimiento y reparacion de computadoras</li>
+                <li>Trabajo en equipo y resolucion de problemas</li>
+                <li>Conocimientos basicos de Java y C++</li>
+                
+            </ul>
+        </section>
+
+        <!-- SECCION 4: PROYECTOS (con tabla) -->
+        <section id="proyectos">
+            <h2>Proyectos Realizados</h2>
+            <p>Estos son algunos de los trabajos que he desarrollado en mi formacion academica:</p>
+            
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nombre del Proyecto</th>
+                        <th>Descripcion</th>
+                        <th>Año</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sistema de Gestion de Empleados</td>
+                        <td>Programa en Python con POO para registrar empleados, calcular bonos y nomina total</td>
+                        <td>2026</td>
+                    </tr>
+                    <tr>
+                        <td>Portafolio Web Personal</td>
+                        <td>Sitio web estatico con HTML5 mostrando mi informacion, habilidades y proyectos</td>
+                        <td>2026</td>
+                    </tr>
+                    <tr>
+                        <td>Servicio Comunitario en Liceo</td>
+                        <td>Charlas de computacion, Word, Excel e Inteligencia Artificial a estudiantes de 4to y 5to ano</td>
+                        <td>2026</td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollo de aplicacion de Esccritorio</td>
+                        <td>Desarrolle una aplicaion de escritorio de sistema de inventario para nuestro negocio familiar</td>
+                        <td>2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SECCION 5: CONTACTO (con formulario) -->
+        <section id="contacto">
+            <h2>Contactame</h2>
+            <p>Tienes alguna sugerencia, duda o quieres ponerte en contacto conmigo? Enviame un mensaje por aqui:</p>
+            
+            <form action="#" method="post">
+                <label for="nombre">Tu Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+
+                <label for="correo">Tu Correo Electronico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <br><br>
+
+                <label for="mensaje">Tu Mensaje:</label>
+                <br>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea>
+                <br><br>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ============================================ -->
+    <!-- FOOTER: Pie de pagina con informacion y enlaces -->
+    <!-- ============================================ -->
+    <footer>
+        <p>&copy; 2026 Mi Portafolio Personal. Todos los derechos reservados.</p>
+        <p>Desarrollado por: <strong>Bryan Fernandez</strong>
+            Correo: <a href="mailto:fernandezbryan2112@gmail.com">fernandezbryan2112@gmail.com</a> |
+            GitHub: <a href="https://github.com/Elchivoqmasmea" target="_blank">github.com/BryanGabriel</a> |
+            Instagram: <a href="https://www.instagram.com/iam_bryan21/?hl=es" target="_blank">@iam_bryan21</a>
+        </p>
+    </footer>
+
+</body>
+</html>
