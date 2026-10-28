@@ -41,5 +41,5 @@ Proyecto_Portafolio/
 - Publicacion: GitHub Pages
 
 ## Enlaces
-- **Repositorio GitHub:** https://github.com/Elchivoquemasmea/proyecto-web-Fernandez
+- **Repositorio GitHub:** https://github.com/Elchivoqmasmea/proyecto-web-Fernandez
 - **Pagina en linea (GitHub Pages):** https://Elchivoquemasmea.github.io/proyecto-web-Fernandez
