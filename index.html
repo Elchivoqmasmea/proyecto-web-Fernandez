@@ -3,151 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio personal - Proyecto de Desarrollo Web">
-    <meta name="author" content="[Bryan Gabriel Fernandez Gonzalez]">
-    <title>Mi Portafolio Personal - Bryan Fernandez</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Portafolio Personal - Bryan Gabriel Fernandez Gonzalez">
+    <title>Bryan Fernandez | Portafolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primario: '#165DFF',
+                        oscuro: '#0F172A',
+                        claro: '#F8FAFC',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .scroll-smooth {
+                scroll-behavior: smooth;
+            }
+        }
+    </style>
 </head>
-<body>
+<body class="font-sans bg-claro text-gray-800 scroll-smooth">
 
-    <!-- ============================================ -->
-    <!-- HEADER: Encabezado con logo y menu de navegacion -->
-    <!-- ============================================ -->
-    <header>
-        <img src="img/Logo.png"  width="150" height="150" style="border-radius: 50%;">
-
-        <h1>Mi Portafolio Personal</h1>
-
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre Mi</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <!-- HEADER -->
+    <header class="bg-oscuro text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between">
+            <img src="img/Logo.png" alt="Logo" class="w-16 h-16 rounded-full object-cover mb-3 md:mb-0">
+            
+            <h1 class="text-2xl font-bold mb-3 md:mb-0">Mi Portafolio</h1>
+            
+            <nav class="w-full md:w-auto">
+                <ul class="flex flex-wrap justify-center gap-4 md:gap-6 text-sm font-medium">
+                    <li><a href="#inicio" class="hover:text-primario transition-colors">Inicio</a></li>
+                    <li><a href="#sobre-mi" class="hover:text-primario transition-colors">Sobre Mí</a></li>
+                    <li><a href="#habilidades" class="hover:text-primario transition-colors">Habilidades</a></li>
+                    <li><a href="#proyectos" class="hover:text-primario transition-colors">Proyectos</a></li>
+                    <li><a href="#contacto" class="hover:text-primario transition-colors">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- ============================================ -->
-    <!-- MAIN: Contenido principal del sitio          -->
-    <!-- ============================================ -->
     <main>
-
-        <!-- SECCION 1: INICIO / PRESENTACION -->
-        <section id="inicio">
-            <h2>Bienvenidos a mi Portafolio</h2>
-            <p>Hola, soy <strong>Bryan Fernandez</strong>, estudiante de Informatica en el IUTIRLA, seccion 4DA. Este sitio web es mi primer proyecto de desarrollo  Web y aqui muestro quién soy, lo que se hacer y los proyectos que he realizado.</p>
-            <img src="img/Yo.jpeg" alt= width = "300" height="300" style="border-radius: 50%; width: 200px;height: 200px;object-fit: cover;">
-            <p>Me gusta la tecnologia, los juegos,programar  y crear soluciones que le sirvan a los demas. Sigue bajando para conocerme mejor.</p>
+        <!-- SECCION INICIO -->
+        <section id="inicio" class="py-20 px-4">
+            <div class="container mx-auto max-w-4xl text-center">
+                <h2 class="text-[clamp(1.8rem,5vw,2.8rem)] font-bold text-oscuro mb-6">¡Bienvenidos a mi Portafolio!</h2>
+                <p class="text-lg mb-8 leading-relaxed">
+                    Hola, soy <strong class="text-primario">Bryan Fernandez</strong>, estudiante de Informática en el IUTIRLA, sección 4DA. 
+                    Este sitio web es mi primer proyecto de desarrollo web, aquí te cuento quién soy, lo que sé hacer y mis trabajos.
+                </p>
+                <img src="img/Yo.jpeg" alt="Bryan Fernandez" class="w-48 h-48 rounded-full object-cover mx-auto mb-8 shadow-lg border-4 border-white">
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Me gusta la tecnología, los videojuegos, programar y crear soluciones que le sirvan a los demás. 
+                    Sigue bajando para conocerme mejor ✨
+                </p>
+            </div>
         </section>
 
-        <!-- SECCION 2: SOBRE MI -->
-        <section id="sobre-mi">
-            <h2>Sobre Mi</h2>
-            <p>Soy un estudiante de 4to trimestre de Informatica. Me gusta aprender y crear cosas nuevas. Actualmente estoy formandome en programacion, Phyton,Mantenimiento de computadoras,redes y desarrollo web.</p>
-            
-            <h3>Algunos datos sobre mi:</h3>
-            <ol>
-                <li>Vivo en Venezuela,Estado Nueva Esparta</li>
-                <li>Estudio en el IUTIRLA</li>
-                <li>Me gusta Editar videos, hago streams de aveces como hobby,amante a los videojuegos y hablar con las personas</li>
-                <li>Aprendo rapido y trabajo bien en equipo</li>
-            </ol>
-
-            <img src="img/Edit.jpeg" alt="Imagen representativa de mis estudios y pasatiempos" width="300" height="200"> <img src="img/clase.jpeg" width="300" height="200"> <img src="img/clase2.jpeg" width="300" height="200">
-        </section>
-
-        <!-- SECCION 3: HABILIDADES -->
-        <section id="habilidades">
-            <h2>Mis Habilidades</h2>
-            <p>Estas son las herramientas y conocimientos que he adquirido durante mi formacion academica:</p>
-            <ul>
-                <li>HTML5 - Estructura de paginas web (nivel basico)</li>
-                <li>Python - Programacion y programacion orientada a objetos</li>
-                <li>Microsoft Word - Redaccion y formato de documentos</li>
-                <li>Microsoft Excel - Organizacion de datos y calculos</li>
-                <li>Mantenimiento y reparacion de computadoras</li>
-                <li>Trabajo en equipo y resolucion de problemas</li>
-                <li>Conocimientos basicos de Java y C++</li>
+        <!-- SECCION SOBRE MI -->
+        <section id="sobre-mi" class="py-16 px-4 bg-gray-50">
+            <div class="container mx-auto max-w-5xl">
+                <h2 class="text-3xl font-bold text-center mb-12 text-oscuro">Sobre Mí</h2>
                 
-            </ul>
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div class="space-y-4">
+                        <p class="text-lg leading-relaxed">
+                            Soy un estudiante de 4to trimestre de Informática. Me gusta aprender y crear cosas nuevas. 
+                            Actualmente me formo en programación, Python, mantenimiento de computadoras, redes y desarrollo web.
+                        </p>
+                        
+                        <h3 class="text-xl font-semibold text-primario mt-6">Algunos datos sobre mí:</h3>
+                        <ul class="space-y-2 pl-5 list-disc">
+                            <li>📍 Vivo en Venezuela, Estado Nueva Esparta</li>
+                            <li>🎓 Estudio en el IUTIRLA</li>
+                            <li>🎬 Me gusta editar videos y hacer streams como hobby</li>
+                            <li>💡 Aprendo rápido y trabajo bien en equipo</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="img/Edit.jpeg" alt="Edición de video" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform">
+                        <img src="img/clase.jpeg" alt="En clase" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform">
+                        <img src="img/clase2.jpeg" alt="Compañeros de clase" class="col-span-2 w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform">
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- SECCION 4: PROYECTOS (con tabla) -->
-        <section id="proyectos">
-            <h2>Proyectos Realizados</h2>
-            <p>Estos son algunos de los trabajos que he desarrollado en mi formacion academica:</p>
-            
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Nombre del Proyecto</th>
-                        <th>Descripcion</th>
-                        <th>Año</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Sistema de Gestion de Empleados</td>
-                        <td>Programa en Python con POO para registrar empleados, calcular bonos y nomina total</td>
-                        <td>2026</td>
-                    </tr>
-                    <tr>
-                        <td>Portafolio Web Personal</td>
-                        <td>Sitio web estatico con HTML5 mostrando mi informacion, habilidades y proyectos</td>
-                        <td>2026</td>
-                    </tr>
-                    <tr>
-                        <td>Servicio Comunitario en Liceo</td>
-                        <td>Charlas de computacion, Word, Excel e Inteligencia Artificial a estudiantes de 4to y 5to ano</td>
-                        <td>2026</td>
-                    </tr>
-                    <tr>
-                        <td>Desarrollo de aplicacion de Esccritorio</td>
-                        <td>Desarrolle una aplicaion de escritorio de sistema de inventario para nuestro negocio familiar</td>
-                        <td>2026</td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- SECCION HABILIDADES -->
+        <section id="habilidades" class="py-16 px-4">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="text-3xl font-bold text-center mb-12 text-oscuro">Mis Habilidades</h2>
+                
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border-t-4 border-primario">
+                        <h3 class="font-bold text-lg mb-2">💻 Desarrollo Web</h3>
+                        <p class="text-gray-600">HTML5 — estructuro páginas web</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border-t-4 border-primario">
+                        <h3 class="font-bold text-lg mb-2">🐍 Python</h3>
+                        <p class="text-gray-600">Programación y POO — creo aplicaciones lógicas</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border-t-4 border-primario">
+                        <h3 class="font-bold text-lg mb-2">📄 Ofimática</h3>
+                        <p class="text-gray-600">Word y Excel — documentos y manejo de datos</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border-t-4 border-primario">
+                        <h3 class="font-bold text-lg mb-2">🔧 Mantenimiento</h3>
+                        <p class="text-gray-600">Reparación y cuidado de equipos de cómputo</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border-t-4 border-primario">
+                        <h3 class="font-bold text-lg mb-2">☕ Java y C++</h3>
+                        <p class="text-gray-600">Conocimientos básicos de programación</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border-t-4 border-primario">
+                        <h3 class="font-bold text-lg mb-2">🤝 Trabajo en Equipo</h3>
+                        <p class="text-gray-600">Comunicación y resolución de problemas</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- SECCION 5: CONTACTO (con formulario) -->
-        <section id="contacto">
-            <h2>Contactame</h2>
-            <p>Tienes alguna sugerencia, duda o quieres ponerte en contacto conmigo? Enviame un mensaje por aqui:</p>
-            
-            <form action="#" method="post">
-                <label for="nombre">Tu Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <br><br>
-
-                <label for="correo">Tu Correo Electronico:</label>
-                <input type="email" id="correo" name="correo" required>
-                <br><br>
-
-                <label for="mensaje">Tu Mensaje:</label>
-                <br>
-                <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea>
-                <br><br>
-
-                <button type="submit">Enviar Mensaje</button>
-            </form>
+        <!-- SECCION PROYECTOS -->
+        <section id="proyectos" class="py-16 px-4 bg-gray-50">
+            <div class="container mx-auto max-w-5xl">
+                <h2 class="text-3xl font-bold text-center mb-12 text-oscuro">Proyectos Realizados</h2>
+                
+                <div class="overflow-x-auto rounded-lg border border-gray-200">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="bg-primario text-white">
+                                <th class="py-3 px-4">Nombre</th>
+                                <th class="py-3 px-4">Descripción</th>
+                                <th class="py-3 px-4 text-center">Año</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-100 transition-colors">
+                                <td class="py-3 px-4 font-medium">Sistema de Gestión de Empleados</td>
+                                <td class="py-3 px-4 text-gray-600">Programa en Python con POO para registrar empleados, calcular bonos y nómina</td>
+                                <td class="py-3 px-4 text-center font-semibold">2026</td>
+                            </tr>
+                            <tr class="hover:bg-gray-100 transition-colors">
+                                <td class="py-3 px-4 font-medium">Portafolio Web Personal</td>
+                                <td class="py-3 px-4 text-gray-600">Sitio web estático con HTML5 mostrando mi información y proyectos</td>
+                                <td class="py-3 px-4 text-center font-semibold">2026</td>
+                            </tr>
+                            <tr class="hover:bg-gray-100 transition-colors">
+                                <td class="py-3 px-4 font-medium">Servicio Comunitario</td>
+                                <td class="py-3 px-4 text-gray-600">Charlas de computación, Word, Excel e IA a estudiantes de 4to y 5to año</td>
+                                <td class="py-3 px-4 text-center font-semibold">2026</td>
+                            </tr>
+                            <tr class="hover:bg-gray-100 transition-colors">
+                                <td class="py-3 px-4 font-medium">Sistema de Inventario</td>
+                                <td class="py-3 px-4 text-gray-600">Aplicación de escritorio para gestionar inventario de negocio familiar</td>
+                                <td class="py-3 px-4 text-center font-semibold">2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
 
+        <!-- SECCION CONTACTO -->
+        <section id="contacto" class="py-16 px-4">
+            <div class="container mx-auto max-w-xl">
+                <h2 class="text-3xl font-bold text-center mb-12 text-oscuro">Contáctame</h2>
+                
+                <p class="text-center mb-8 text-gray-600">¿Tienes alguna sugerencia o duda? ¡Escríbeme!</p>
+                
+                <form action="#" method="post" class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="mb-5">
+                        <label for="nombre" class="block font-medium mb-2">Tu Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required 
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primario">
+                    </div>
+                    
+                    <div class="mb-5">
+                        <label for="correo" class="block font-medium mb-2">Tu Correo:</label>
+                        <input type="email" id="correo" name="correo" required 
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primario">
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="mensaje" class="block font-medium mb-2">Tu Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required 
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primario"></textarea>
+                    </div>
+                    
+                    <button type="submit" 
+                        class="w-full bg-primario text-white py-3 rounded-lg font-medium hover:bg-blue-600 transition-colors">
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </section>
     </main>
 
-    <!-- ============================================ -->
-    <!-- FOOTER: Pie de pagina con informacion y enlaces -->
-    <!-- ============================================ -->
-    <footer>
-        <p>&copy; 2026 Mi Portafolio Personal. Todos los derechos reservados.</p>
-        <p>Desarrollado por: <strong>Bryan Fernandez</strong>
-            Correo: <a href="mailto:fernandezbryan2112@gmail.com">fernandezbryan2112@gmail.com</a> |
-            GitHub: <a href="https://github.com/Elchivoqmasmea" target="_blank">github.com/BryanGabriel</a> |
-            Instagram: <a href="https://www.instagram.com/iam_bryan21/?hl=es" target="_blank">@iam_bryan21</a>
-        </p>
+    <!-- FOOTER -->
+    <footer class="bg-oscuro text-white py-10 px-4">
+        <div class="container mx-auto text-center">
+            <p class="text-lg mb-4">&copy; 2026 Bryan Fernandez — Todos los derechos reservados</p>
+            
+            <div class="flex justify-center gap-6 mb-6 text-xl">
+                <a href="mailto:fernandezbryan2112@gmail.com" class="hover:text-primario transition-colors" title="Correo">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://github.com/Elchivoqmasmea" target="_blank" class="hover:text-primario transition-colors" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/iam_bryan21/?hl=es" target="_blank" class="hover:text-primario transition-colors" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            
+            <p class="text-sm text-gray-400">Desarrollado con ❤️ en Venezuela</p>
+        </div>
     </footer>
-
 </body>
 </html>
